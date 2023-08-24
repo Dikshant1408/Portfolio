@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Dikshant Rajput</title>
+    <link rel="stylesheet" href="style.css"><script src="https://kit.fontawesome.com/d8295bd605.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a  href="#header">Home </a></li>
+                    <li><a  href="#about">About </a></li>
+                    <li><a  href="#skills">Skills </a></li>
+                    <li><a  href="#portfolio">Projects </a></li>
+                    <li><a  href="#contact">Contact </a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Student</p>
+                <h1>Hi, I'm <span>Dikshant Rajput</span></h1>
+            </div>
+        </div>
+    </div>
+
+<!------------------------------------------- About ---------------------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="User.png.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>ABCD</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skiils</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span><br>Software Development</li>
+                            <li><span>Unity</span><br>Game Development</li>
+                            <li><span>Blender</span><br>Developing 3D Models</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Schooling</span><br>Nutan Vidya Mandir</li>
+                            <li><span>UG Degree</span><br>Symbiosis Institute of Computer Studies And Research</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>Java</span><br>Software Development</li>
+                            <li><span>Unity</span><br>Game Development</li>
+                            <li><span>Blender</span><br>Developing 3D Models</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!------------------------------------------- Projects ---------------------------------------->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Software Development</h2>
+
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-tape"></i>
+                    <h2>Motion Graphics</h2>
+
+
+                </div>
+                <div>
+                    <i class="fa-brands fa-unity"></i>
+                    <h2>Game Development</h2>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!------------------------------------------- Portfolio ---------------------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="projects-list">
+                <div class="project">
+                    <img src ="img_1.jpg">
+                    <div class="layer">
+                        <h3>Android Apps</h3>
+                        <p>These are some apps made by be which include college projects and some I made in in my free time</p>
+                        <a href="https://github.com/Dikshant1408?tab=repositories"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src ="img_2.jpg">
+                    <div class="layer">
+                        <h3>Blender Projects</h3>
+                        <p>These are some motion graphic projects in Blender which I made when I started learning Blender</p>
+                        <a href="https://drive.google.com/drive/folders/1vmXf0RsfCONuTmBz47Z98hGDN2h2zlUQ?usp=drive_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src ="img_3.jpg">
+                    <div class="layer">
+                        <h3>flappy</h3>
+                        <p>This is a game similar to flappy bird also my first game made with Unity Engine</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Dikshant1408?tab=repositories" class="btn">See More</a>
+        </div>
+    </div>
+
+<!------------------------------------------- Contact ---------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 0123456789</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-google-drive"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea type="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2 ">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Dikshant Rajput </p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby8N1YLjdSUwIqliCSnsaCJgcoM25vQqADfYAC6StQdcGmvwBLc_NPajqioFg4aybAIoQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function () {
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
+
