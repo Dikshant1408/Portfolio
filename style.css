@@ -373,7 +373,7 @@ nav .fas{
     display: none !important;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1080px){
     #header{
         background-image: url("Untitled design.png");
     }
