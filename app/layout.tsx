@@ -16,25 +16,25 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://dikshant.dev'),
-  title: 'Dikshant - Full Stack Developer & Software Engineer',
-  description: 'Building practical, scalable, and user-focused applications with modern web technologies, clean architecture, and real-world impact.',
-  keywords: ['Full Stack Developer', 'Software Engineer', 'React', 'Next.js', 'TypeScript', 'Web Development'],
-  authors: [{ name: 'Dikshant' }],
-  creator: 'Dikshant',
+  metadataBase: new URL('https://dikshantrajput.dev'),
+  title: 'Dikshant Rajput - Versatile Software Developer & Innovator',
+  description: 'Versatile Software Developer & Innovator specializing in AI-powered applications, fintech solutions, and modern web technologies. Currently pursuing MCA at Birla Institute of Technology.',
+  keywords: ['Software Developer', 'AI Developer', 'Python', 'Java', 'Machine Learning', 'Fintech', 'Web Development', 'Innovation'],
+  authors: [{ name: 'Dikshant Rajput' }],
+  creator: 'Dikshant Rajput',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://dikshant.dev',
-    title: 'Dikshant - Full Stack Developer & Software Engineer',
-    description: 'Building practical, scalable, and user-focused applications with modern web technologies.',
-    siteName: 'Dikshant Portfolio',
+    url: 'https://dikshantrajput.dev',
+    title: 'Dikshant Rajput - Versatile Software Developer & Innovator',
+    description: 'Versatile Software Developer & Innovator specializing in AI-powered applications and fintech solutions.',
+    siteName: 'Dikshant Rajput Portfolio',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dikshant - Full Stack Developer & Software Engineer',
-    description: 'Building practical, scalable, and user-focused applications with modern web technologies.',
-    creator: '@dikshant',
+    title: 'Dikshant Rajput - Versatile Software Developer & Innovator',
+    description: 'Versatile Software Developer & Innovator specializing in AI-powered applications and fintech solutions.',
+    creator: '@dikshantrajput',
   },
   robots: {
     index: true,

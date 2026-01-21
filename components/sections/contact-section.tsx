@@ -8,19 +8,19 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'hello@dikshant.dev',
-    href: 'mailto:hello@dikshant.dev'
+    value: 'dikshantrajput2007087@gmail.com',
+    href: 'mailto:dikshantrajput2007087@gmail.com'
   },
   {
     icon: Phone,
     label: 'Phone',
-    value: '+1 (555) 123-4567',
-    href: 'tel:+15551234567'
+    value: '+91 7982650236',
+    href: 'tel:+917982650236'
   },
   {
     icon: MapPin,
     label: 'Location',
-    value: 'San Francisco, CA',
+    value: 'Ghaziabad, India',
     href: '#'
   }
 ]
@@ -29,19 +29,19 @@ const socialLinks = [
   {
     icon: Github,
     label: 'GitHub',
-    href: 'https://github.com/dikshant',
+    href: 'https://github.com/Dikshant1408',
     color: 'hover:text-gray-900 dark:hover:text-white'
   },
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    href: 'https://linkedin.com/in/dikshant',
+    href: 'https://linkedin.com/in/dikshantrajput',
     color: 'hover:text-blue-600'
   },
   {
     icon: Twitter,
     label: 'Twitter',
-    href: 'https://twitter.com/dikshant',
+    href: 'https://twitter.com/dikshantrajput',
     color: 'hover:text-blue-400'
   }
 ]

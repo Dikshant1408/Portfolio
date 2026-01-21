@@ -56,7 +56,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             Hi, I'm{' '}
-            <span className="gradient-text">Dikshant</span>
+            <span className="gradient-text">Dikshant Rajput</span>
           </motion.h1>
 
           <motion.h2
@@ -65,7 +65,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Full Stack Developer & Software Engineer
+            Versatile Software Developer & Innovator
           </motion.h2>
 
           <motion.p
@@ -74,8 +74,8 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            Building practical, scalable, and user-focused applications with modern web technologies, 
-            clean architecture, and real-world impact.
+            Specializing in AI-powered applications, fintech solutions, and innovative software development. 
+            Currently pursuing MCA while building cutting-edge technology solutions.
           </motion.p>
 
           <motion.div
@@ -116,9 +116,9 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 1.2 }}
           >
             {[
-              { icon: Github, href: 'https://github.com/dikshant', label: 'GitHub' },
-              { icon: Linkedin, href: 'https://linkedin.com/in/dikshant', label: 'LinkedIn' },
-              { icon: Mail, href: 'mailto:hello@dikshant.dev', label: 'Email' },
+              { icon: Github, href: 'https://github.com/Dikshant1408', label: 'GitHub' },
+              { icon: Linkedin, href: 'https://linkedin.com/in/dikshantrajput', label: 'LinkedIn' },
+              { icon: Mail, href: 'mailto:dikshantrajput2007087@gmail.com', label: 'Email' },
             ].map(({ icon: Icon, href, label }) => (
               <motion.a
                 key={label}

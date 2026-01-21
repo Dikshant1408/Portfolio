@@ -7,60 +7,46 @@ import { Calendar, MapPin, ExternalLink } from 'lucide-react'
 const experiences = [
   {
     id: '1',
-    title: 'Senior Full Stack Developer',
-    company: 'TechCorp Solutions',
-    location: 'San Francisco, CA',
-    period: '2023 - Present',
-    description: 'Leading development of scalable web applications serving 100K+ users. Architected microservices infrastructure and mentored junior developers.',
+    title: 'Intern',
+    company: 'CoreFinExperts Global Technologies Pvt Ltd',
+    location: 'Pune, India',
+    period: 'Jan 2024 - Apr 2024',
+    description: 'Contributed to the go-to-market strategy for DhanXpert, a fintech product, by conducting comprehensive market research and competitor analysis to align features with user needs.',
     achievements: [
-      'Reduced application load time by 40% through optimization',
-      'Led team of 5 developers on major product redesign',
-      'Implemented CI/CD pipeline reducing deployment time by 60%'
+      'Facilitated user feedback sessions, boosting customer engagement by 25%',
+      'Significantly improved overall user experience through data-driven insights',
+      'Assisted in crafting business models and pitch decks for product scaling',
+      'Supported product scaling and investor outreach in a fast-paced startup environment'
     ],
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS', 'Docker']
-  },
-  {
-    id: '2',
-    title: 'Full Stack Developer',
-    company: 'StartupXYZ',
-    location: 'Remote',
-    period: '2021 - 2023',
-    description: 'Developed MVP and scaled platform from 0 to 10K users. Built both frontend and backend systems with focus on performance and user experience.',
-    achievements: [
-      'Built entire platform from scratch using modern tech stack',
-      'Implemented real-time features using WebSocket technology',
-      'Achieved 99.9% uptime through robust error handling'
-    ],
-    technologies: ['Vue.js', 'Python', 'MongoDB', 'Redis', 'GCP']
-  },
-  {
-    id: '3',
-    title: 'Frontend Developer',
-    company: 'Digital Agency Pro',
-    location: 'New York, NY',
-    period: '2020 - 2021',
-    description: 'Created responsive web applications for various clients. Collaborated with designers and backend developers to deliver pixel-perfect implementations.',
-    achievements: [
-      'Delivered 15+ client projects on time and within budget',
-      'Improved website performance scores by average of 35%',
-      'Established component library used across all projects'
-    ],
-    technologies: ['React', 'JavaScript', 'SASS', 'Webpack', 'Figma']
+    technologies: ['Market Research', 'Data Analysis', 'User Experience', 'Fintech', 'Business Strategy']
   }
 ]
 
 const education = [
   {
     id: '1',
-    degree: 'Bachelor of Science in Computer Science',
-    school: 'University of Technology',
-    location: 'California, USA',
-    period: '2016 - 2020',
-    description: 'Graduated Magna Cum Laude with focus on software engineering and algorithms.',
+    degree: 'Master of Computer Applications (MCA)',
+    school: 'Birla Institute of Technology',
+    location: 'Mesra, India',
+    period: '2024 - 2026',
+    description: 'Currently pursuing advanced studies in computer applications with focus on software development, AI, and modern technologies.',
     achievements: [
-      'GPA: 3.8/4.0',
-      'Dean\'s List for 6 semesters',
-      'President of Computer Science Club'
+      'Specializing in AI and Machine Learning applications',
+      'Active participant in hackathons and coding competitions',
+      'Working on innovative projects in fintech and space technology'
+    ]
+  },
+  {
+    id: '2',
+    degree: 'Bachelor of Computer Applications (BCA)',
+    school: 'Symbiosis Institute Of Computer Studies And Research',
+    location: 'Pune, India',
+    period: '2021 - 2024',
+    description: 'Completed undergraduate studies with strong foundation in computer science fundamentals and programming.',
+    achievements: [
+      'Strong foundation in programming and software development',
+      'Participated in various technical projects and competitions',
+      'Developed expertise in multiple programming languages'
     ]
   }
 ]

@@ -32,9 +32,9 @@ const commands = [
   { id: 'achievements', label: 'Go to Achievements', icon: Award, action: () => scrollToSection('#achievements') },
   { id: 'contact', label: 'Go to Contact', icon: Mail, action: () => scrollToSection('#contact') },
   { id: 'resume', label: 'Download Resume', icon: Download, action: () => window.open('/resume.pdf', '_blank') },
-  { id: 'github', label: 'Open GitHub', icon: Github, action: () => window.open('https://github.com/dikshant', '_blank') },
-  { id: 'linkedin', label: 'Open LinkedIn', icon: Linkedin, action: () => window.open('https://linkedin.com/in/dikshant', '_blank') },
-  { id: 'twitter', label: 'Open Twitter', icon: Twitter, action: () => window.open('https://twitter.com/dikshant', '_blank') },
+  { id: 'github', label: 'Open GitHub', icon: Github, action: () => window.open('https://github.com/Dikshant1408', '_blank') },
+  { id: 'linkedin', label: 'Open LinkedIn', icon: Linkedin, action: () => window.open('https://linkedin.com/in/dikshantrajput', '_blank') },
+  { id: 'twitter', label: 'Open Twitter', icon: Twitter, action: () => window.open('https://twitter.com/dikshantrajput', '_blank') },
 ]
 
 function scrollToSection(href: string) {

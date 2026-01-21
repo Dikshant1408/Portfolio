@@ -5,8 +5,8 @@ import { motion, useInView, AnimatePresence } from 'framer-motion'
 import { ExternalLink, Github, Filter, X } from 'lucide-react'
 import { projects } from '@/data/projects'
 
-const categories = ['All', 'Web App', 'Mobile', 'API', 'Tool', 'Open Source']
-const technologies = ['React', 'Next.js', 'TypeScript', 'Node.js', 'Python', 'PostgreSQL', 'MongoDB']
+const categories = ['All', 'Web App', 'AI/ML', 'Research', 'Tool', 'Open Source']
+const technologies = ['Python', 'Java', 'Machine Learning', 'AI', 'TensorFlow', 'Django', 'Flask', 'Data Science']
 
 export function ProjectsSection() {
   const [selectedCategory, setSelectedCategory] = useState('All')

@@ -65,7 +65,7 @@ export function Navigation() {
               }}
               className="text-2xl font-bold gradient-text"
             >
-              Dikshant
+              Dikshant Rajput
             </a>
           </motion.div>
 

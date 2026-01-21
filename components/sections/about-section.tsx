@@ -59,21 +59,22 @@ export function AboutSection() {
           >
             <div className="prose prose-lg dark:prose-invert">
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                I'm a passionate full-stack developer with a strong foundation in modern web technologies. 
-                My journey in software development began with curiosity about how things work under the hood, 
-                and has evolved into a career focused on building scalable, user-centric applications.
+                I'm a versatile software developer and innovator currently pursuing my Master of Computer Applications (MCA) 
+                at Birla Institute of Technology, Mesra. My passion lies in creating AI-powered applications and fintech 
+                solutions that solve real-world problems.
               </p>
               
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                I believe in writing clean, maintainable code and staying up-to-date with the latest 
-                industry trends. Whether it's architecting complex systems, optimizing performance, 
-                or crafting intuitive user interfaces, I approach every project with attention to detail 
-                and a commitment to excellence.
+                During my internship at CoreFinExperts Global Technologies, I contributed to the go-to-market strategy 
+                for DhanXpert, a fintech product, by conducting comprehensive market research and competitor analysis. 
+                I facilitated user feedback sessions that boosted customer engagement by 25% and significantly improved 
+                overall user experience.
               </p>
 
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                When I'm not coding, you'll find me exploring new technologies, contributing to open source 
-                projects, or sharing knowledge with the developer community through blogs and mentoring.
+                I specialize in Python, Java, machine learning, and modern web technologies. My projects range from 
+                AI-powered chatbots and space health assessment tools to student budget management systems, showcasing 
+                my ability to work across diverse domains and technologies.
               </p>
             </div>
 
@@ -83,7 +84,7 @@ export function AboutSection() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="flex flex-wrap gap-3"
             >
-              {['JavaScript', 'TypeScript', 'React', 'Node.js', 'Python', 'PostgreSQL'].map((tech) => (
+              {['Python', 'Java', 'Machine Learning', 'AI', 'TensorFlow', 'Git', 'Problem Solving', 'Leadership'].map((tech) => (
                 <span
                   key={tech}
                   className="px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-full text-sm font-medium"

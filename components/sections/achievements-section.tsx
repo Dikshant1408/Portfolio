@@ -8,66 +8,66 @@ const achievements = [
   {
     id: '1',
     icon: Trophy,
-    title: 'Best Developer Award 2023',
-    description: 'Recognized for outstanding contribution to product development and team leadership at TechCorp Solutions.',
-    date: '2023',
-    category: 'Award'
+    title: 'The Stellar Gateway Hackathon Participant',
+    description: 'Developed CelestAI, an AI-powered space chatbot for astronomy education and space exploration guidance.',
+    date: '2025',
+    category: 'Hackathon'
   },
   {
     id: '2',
     icon: Star,
-    title: 'Open Source Contributor',
-    description: 'Active contributor to popular open source projects with 500+ GitHub stars and 50+ merged PRs.',
-    date: '2020-Present',
-    category: 'Open Source'
+    title: 'AI & Machine Learning Specialist',
+    description: 'Specialized in developing AI-powered applications including chatbots, health assessment tools, and budget management systems.',
+    date: '2024-Present',
+    category: 'Expertise'
   },
   {
     id: '3',
     icon: Users,
-    title: 'Tech Mentor',
-    description: 'Mentored 20+ junior developers through coding bootcamps and online platforms.',
-    date: '2021-Present',
-    category: 'Community'
+    title: 'Fintech Innovation Contributor',
+    description: 'Contributed to DhanXpert fintech product strategy, improving customer engagement by 25% through user research.',
+    date: '2024',
+    category: 'Innovation'
   },
   {
     id: '4',
     icon: Code,
-    title: 'Hackathon Winner',
-    description: 'First place in Global Web Development Hackathon 2022 with innovative e-commerce solution.',
-    date: '2022',
-    category: 'Competition'
+    title: 'Multi-Domain Project Developer',
+    description: 'Successfully developed projects across diverse domains including space technology, fintech, and campus management.',
+    date: '2024-Present',
+    category: 'Development'
   }
 ]
 
 const certifications = [
   {
     id: '1',
-    title: 'AWS Certified Solutions Architect',
-    issuer: 'Amazon Web Services',
-    date: '2023',
-    credentialId: 'AWS-CSA-2023-001'
+    title: 'Artificial Intelligence Foundations: Machine Learning',
+    issuer: 'LinkedIn Learning',
+    date: '2025',
+    credentialId: 'AI-ML-2025-001'
   },
   {
     id: '2',
-    title: 'Google Cloud Professional Developer',
-    issuer: 'Google Cloud',
-    date: '2022',
-    credentialId: 'GCP-PD-2022-001'
+    title: 'JPMorgan Chase & Co - Software Engineering Job Simulation',
+    issuer: 'Forage',
+    date: '2025',
+    credentialId: 'JPM-SE-2025-001'
   },
   {
     id: '3',
-    title: 'MongoDB Certified Developer',
-    issuer: 'MongoDB University',
-    date: '2021',
-    credentialId: 'MDB-DEV-2021-001'
+    title: 'Effective Leadership',
+    issuer: 'HP LIFE',
+    date: '2025',
+    credentialId: 'HP-EL-2025-001'
   }
 ]
 
 const stats = [
-  { label: 'Projects Completed', value: '50+', icon: Code },
-  { label: 'GitHub Stars', value: '1.2K+', icon: Star },
-  { label: 'Developers Mentored', value: '25+', icon: Users },
-  { label: 'Years Experience', value: '4+', icon: Zap }
+  { label: 'Projects Completed', value: '6+', icon: Code },
+  { label: 'GitHub Repositories', value: '10+', icon: Star },
+  { label: 'Technologies Mastered', value: '15+', icon: Users },
+  { label: 'Years Learning', value: '3+', icon: Zap }
 ]
 
 export function AchievementsSection() {

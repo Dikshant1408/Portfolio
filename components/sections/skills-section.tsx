@@ -5,33 +5,33 @@ import { motion, useInView } from 'framer-motion'
 
 const skillCategories = [
   {
-    title: 'Frontend',
+    title: 'Programming Languages',
     skills: [
-      { name: 'React', level: 95 },
-      { name: 'Next.js', level: 90 },
-      { name: 'TypeScript', level: 88 },
-      { name: 'Tailwind CSS', level: 92 },
-      { name: 'Vue.js', level: 75 },
+      { name: 'Python', level: 90 },
+      { name: 'Java', level: 85 },
+      { name: 'JavaScript', level: 80 },
+      { name: 'SQL', level: 75 },
+      { name: 'VS Code', level: 95 },
     ]
   },
   {
-    title: 'Backend',
+    title: 'AI & Machine Learning',
     skills: [
-      { name: 'Node.js', level: 90 },
-      { name: 'Python', level: 85 },
-      { name: 'PostgreSQL', level: 82 },
-      { name: 'MongoDB', level: 80 },
-      { name: 'Redis', level: 75 },
+      { name: 'Machine Learning', level: 85 },
+      { name: 'TensorFlow', level: 80 },
+      { name: 'Data Science', level: 82 },
+      { name: 'AI Development', level: 78 },
+      { name: 'NLP', level: 75 },
     ]
   },
   {
-    title: 'Tools & Others',
+    title: 'Tools & Frameworks',
     skills: [
-      { name: 'Git', level: 95 },
-      { name: 'Docker', level: 80 },
-      { name: 'AWS', level: 75 },
-      { name: 'Jest', level: 85 },
-      { name: 'Figma', level: 70 },
+      { name: 'Git', level: 90 },
+      { name: 'Firebase', level: 80 },
+      { name: 'Django', level: 75 },
+      { name: 'Flask', level: 70 },
+      { name: 'Problem Solving', level: 95 },
     ]
   }
 ]
@@ -123,9 +123,9 @@ export function SkillsSection() {
           
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              'JavaScript', 'TypeScript', 'React', 'Next.js', 'Node.js', 
-              'Python', 'PostgreSQL', 'MongoDB', 'Redis', 'Docker', 
-              'AWS', 'Git', 'Tailwind CSS', 'Jest', 'Figma'
+              'Python', 'Java', 'Machine Learning', 'AI', 'TensorFlow', 'Git', 
+              'Problem Solving', 'Leadership', 'Effective Communication', 'Teamwork', 
+              'Adaptability', 'Firebase', 'Django', 'Flask', 'Data Science'
             ].map((tech, index) => (
               <motion.span
                 key={tech}
