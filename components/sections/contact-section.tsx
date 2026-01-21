@@ -94,10 +94,10 @@ export function ContactSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Let's Work Together
+            Let&apos;s Work Together
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Have a project in mind or want to discuss opportunities? I'd love to hear from you.
+            Have a project in mind or want to discuss opportunities? I&apos;d love to hear from you.
           </p>
         </motion.div>
 
@@ -299,7 +299,7 @@ export function ContactSection() {
                   animate={{ opacity: 1, y: 0 }}
                   className="p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg text-green-700 dark:text-green-300 text-sm"
                 >
-                  Thank you for your message! I'll get back to you soon.
+                  Thank you for your message! I&apos;ll get back to you soon.
                 </motion.div>
               )}
 

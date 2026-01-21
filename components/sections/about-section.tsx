@@ -59,7 +59,7 @@ export function AboutSection() {
           >
             <div className="prose prose-lg dark:prose-invert">
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                I'm a versatile software developer and innovator currently pursuing my Master of Computer Applications (MCA) 
+                I&apos;m a versatile software developer and innovator currently pursuing my Master of Computer Applications (MCA) 
                 at Birla Institute of Technology, Mesra. My passion lies in creating AI-powered applications and fintech 
                 solutions that solve real-world problems.
               </p>

@@ -51,12 +51,12 @@ export function FloatingElement({ position, geometry, scale = 1 }: FloatingEleme
 
 export function FloatingElements() {
   const elements = [
-    { position: [-3, 2, -2], geometry: 'box', scale: 0.5 },
-    { position: [3, -1, -3], geometry: 'sphere', scale: 0.8 },
-    { position: [-2, -2, -1], geometry: 'torus', scale: 0.6 },
-    { position: [2, 3, -4], geometry: 'box', scale: 0.4 },
-    { position: [0, -3, -2], geometry: 'sphere', scale: 0.7 },
-  ] as const
+    { position: [-3, 2, -2] as [number, number, number], geometry: 'box' as const, scale: 0.5 },
+    { position: [3, -1, -3] as [number, number, number], geometry: 'sphere' as const, scale: 0.8 },
+    { position: [-2, -2, -1] as [number, number, number], geometry: 'torus' as const, scale: 0.6 },
+    { position: [2, 3, -4] as [number, number, number], geometry: 'box' as const, scale: 0.4 },
+    { position: [0, -3, -2] as [number, number, number], geometry: 'sphere' as const, scale: 0.7 },
+  ]
 
   return (
     <>

@@ -55,7 +55,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Hi, I'm{' '}
+            Hi, I&apos;m{' '}
             <span className="gradient-text">Dikshant Rajput</span>
           </motion.h1>
 
