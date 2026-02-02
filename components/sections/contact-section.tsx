@@ -35,13 +35,13 @@ const socialLinks = [
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    href: 'https://linkedin.com/in/dikshantrajput',
+    href: 'https://www.linkedin.com/in/dikshant-rajput/',
     color: 'hover:text-blue-600'
   },
   {
     icon: Twitter,
     label: 'Twitter',
-    href: 'https://twitter.com/dikshantrajput',
+    href: '',
     color: 'hover:text-blue-400'
   }
 ]
