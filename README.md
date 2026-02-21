@@ -342,7 +342,7 @@ This project is open source and available under the [MIT License](LICENSE).
 - **Email**: dikshantrajput2007087@gmail.com
 - **LinkedIn**: [linkedin.com/in/dikshant-rajput](https://linkedin.com/in/dikshant-rajput/)
 - **GitHub**: [github.com/Dikshant1408](https://github.com/Dikshant1408)
-- **Website**: [dikshantrajput.dev](https://dikshantrajput.dev)
+- **Portfolio**: [dikshantrajput_portfolio]([https://dikshantrajput.dev](https://portfolio-m12u11u4q-dikshant1408s-projects.vercel.app/))
 
 ---
 
