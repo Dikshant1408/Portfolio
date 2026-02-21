@@ -1,4 +1,4 @@
-# Dikshant's Portfolio Website
+# Dikshant Rajput — Portfolio Website
 
 A premium, interactive 3D-enhanced personal portfolio website built with modern web technologies. This portfolio serves as a comprehensive showcase of projects, skills, experience, and achievements with a focus on performance, accessibility, and scalability.
 
@@ -18,9 +18,14 @@ A premium, interactive 3D-enhanced personal portfolio website built with modern 
 - **Projects**: Filterable project showcase with detailed case studies
 - **Skills**: Interactive skill visualization with progress bars
 - **Experience**: Professional timeline with achievements
-- **Blog**: Article showcase with categorization and search
 - **Achievements**: Awards, certifications, and recognition
 - **Contact**: Interactive contact form with social links
+
+### AI Chat Widget
+- **Floating Chat Button**: Context-aware AI assistant powered by OpenRouter
+- **Conversation History**: Session-based chat history stored in SQLite
+- **Resume-Grounded Responses**: Answers questions about background, skills, and projects
+- **Python FastAPI Backend**: Separate backend service proxied through Next.js API routes
 
 ### Technical Features
 - **SEO Optimized**: Meta tags, structured data, and semantic HTML
@@ -39,6 +44,13 @@ A premium, interactive 3D-enhanced personal portfolio website built with modern 
 - **3D Graphics**: Three.js with React Three Fiber
 - **Icons**: Lucide React for consistent iconography
 
+### Backend (AI Chat)
+- **Runtime**: Python 3.10+
+- **Framework**: FastAPI with Uvicorn
+- **AI Provider**: OpenRouter (Mistral 7B Instruct by default)
+- **Database**: SQLite for conversation history
+- **HTTP Client**: httpx for async OpenRouter calls
+
 ### Development Tools
 - **Package Manager**: npm/yarn
 - **Linting**: ESLint with Next.js configuration
@@ -55,9 +67,15 @@ A premium, interactive 3D-enhanced personal portfolio website built with modern 
 ```
 dikshant-portfolio/
 ├── app/                    # Next.js App Router
+│   ├── api/               # API routes (chat proxy)
 │   ├── globals.css        # Global styles and CSS variables
 │   ├── layout.tsx         # Root layout with providers
 │   └── page.tsx           # Home page with all sections
+├── backend/               # Python FastAPI AI chat backend
+│   ├── main.py            # FastAPI app (chat & health endpoints)
+│   ├── requirements.txt   # Python dependencies
+│   ├── .env.example       # Example environment variables
+│   └── README.md          # Backend setup instructions
 ├── components/            # Reusable React components
 │   ├── 3d/               # Three.js 3D components
 │   │   ├── scene.tsx     # Main 3D scene component
@@ -68,9 +86,9 @@ dikshant-portfolio/
 │   │   ├── projects-section.tsx
 │   │   ├── skills-section.tsx
 │   │   ├── experience-section.tsx
-│   │   ├── blog-section.tsx
 │   │   ├── achievements-section.tsx
 │   │   └── contact-section.tsx
+│   ├── chat-widget.tsx    # Floating AI chat widget
 │   ├── command-palette.tsx
 │   ├── navigation.tsx
 │   ├── scroll-progress.tsx
@@ -97,13 +115,14 @@ dikshant-portfolio/
 - Node.js 18+ 
 - npm or yarn package manager
 - Git for version control
+- Python 3.10+ *(only required for the AI chat backend)*
 
 ### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/dikshant/portfolio.git
-   cd portfolio
+   git clone https://github.com/Dikshant1408/Portfolio.git
+   cd Portfolio
    ```
 
 2. **Install dependencies**
@@ -113,15 +132,37 @@ dikshant-portfolio/
    yarn install
    ```
 
-3. **Start development server**
+3. **Configure environment variables** *(optional — needed for the AI chat widget)*
+   ```bash
+   cp .env.example .env.local
+   # Set PYTHON_BACKEND_URL if running the Python backend locally
+   ```
+
+4. **Start development server**
    ```bash
    npm run dev
    # or
    yarn dev
    ```
 
-4. **Open in browser**
+5. **Open in browser**
    Navigate to `http://localhost:3000`
+
+### Running the AI Chat Backend
+
+The chat widget requires the Python FastAPI backend to be running. See [`backend/README.md`](./backend/README.md) for full setup instructions.
+
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate   # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+cp .env.example .env
+# Edit .env and set OPENROUTER_API_KEY=<your-key>
+uvicorn main:app --reload --port 8000
+```
+
+Then set `PYTHON_BACKEND_URL=http://localhost:8000` in your Next.js `.env.local`.
 
 ### Build for Production
 
@@ -129,6 +170,12 @@ dikshant-portfolio/
 npm run build
 npm start
 ```
+
+## 🔑 Environment Variables
+
+| Variable             | Required | Description |
+|----------------------|----------|-------------|
+| `PYTHON_BACKEND_URL` | No       | URL of the Python FastAPI backend (enables the AI chat widget) |
 
 ## 📝 Content Management
 
@@ -151,22 +198,6 @@ npm start
    ```
 
 2. **Add project images** to `public/images/projects/`
-
-### Adding Blog Posts
-
-1. **Create new blog post** in `data/blog.ts`:
-   ```typescript
-   {
-     id: 'unique-id',
-     title: 'Blog Post Title',
-     excerpt: 'Short description...',
-     content: 'Full blog content...',
-     date: '2024-01-15',
-     tags: ['React', 'Tutorial'],
-     slug: 'blog-post-slug',
-     featured: true
-   }
-   ```
 
 ### Updating Experience
 
@@ -199,9 +230,13 @@ colors: {
 
 Modify fonts in `app/layout.tsx`:
 ```typescript
-const customFont = Inter({ 
+const inter = Inter({ 
   subsets: ['latin'],
-  variable: '--font-custom',
+  variable: '--font-inter',
+})
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-jetbrains-mono',
 })
 ```
 
@@ -304,11 +339,11 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📞 Contact
 
-- **Email**: hello@dikshant.dev
-- **LinkedIn**: [linkedin.com/in/dikshant](https://linkedin.com/in/dikshant)
-- **GitHub**: [github.com/dikshant](https://github.com/dikshant)
-- **Website**: [dikshant.dev](https://dikshant.dev)
+- **Email**: dikshantrajput2007087@gmail.com
+- **LinkedIn**: [linkedin.com/in/dikshant-rajput](https://linkedin.com/in/dikshant-rajput/)
+- **GitHub**: [github.com/Dikshant1408](https://github.com/Dikshant1408)
+- **Website**: [dikshantrajput.dev](https://dikshantrajput.dev)
 
 ---
 
-Built with ❤️ by Dikshant using Next.js, React, and Three.js
+Built with ❤️ by Dikshant Rajput using Next.js, React, Three.js, and FastAPI
