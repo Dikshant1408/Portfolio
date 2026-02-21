@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef, useEffect, useCallback, useMemo } from 'react'
+import { useState, useRef, useEffect, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { MessageCircle, X, Send, Bot, User, Loader2 } from 'lucide-react'
 
@@ -11,7 +11,6 @@ interface Message {
 }
 
 export function ChatWidget() {
-  const sessionId = useMemo(() => `session-${Math.random().toString(36).slice(2)}`, [])
   const [isOpen, setIsOpen] = useState(false)
   const [messages, setMessages] = useState<Message[]>([
     {
@@ -49,10 +48,14 @@ export function ChatWidget() {
     setIsLoading(true)
 
     try {
+      const history = messages
+        .filter((m) => m.id !== 'welcome')
+        .map(({ role, content }) => ({ role, content }))
+
       const res = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: trimmed, session_id: sessionId }),
+        body: JSON.stringify({ message: trimmed, history }),
       })
 
       const data = await res.json()
