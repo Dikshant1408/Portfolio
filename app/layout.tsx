@@ -4,6 +4,7 @@ import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 import { CommandPalette } from '@/components/command-palette'
 import { Navigation } from '@/components/navigation'
+import { ChatWidget } from '@/components/chat-widget'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -68,6 +69,7 @@ export default function RootLayout({
             {children}
           </main>
           <CommandPalette />
+          <ChatWidget />
         </ThemeProvider>
       </body>
     </html>

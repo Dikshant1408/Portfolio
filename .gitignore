@@ -93,3 +93,11 @@ dist
 # Temporary folders
 tmp/
 temp/
+
+# Python backend
+backend/__pycache__/
+backend/*.pyc
+backend/venv/
+backend/.venv/
+backend/.env
+backend/chat_history.db
