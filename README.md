@@ -2,7 +2,7 @@
 
 A premium, interactive 3D-enhanced personal portfolio website built with modern web technologies. This portfolio serves as a comprehensive showcase of projects, skills, experience, and achievements with a focus on performance, accessibility, and scalability.
 
-## 🚀 Features
+## -----🚀 Features-----
 
 ### Core Features
 - **3D Interactive Elements**: Subtle 3D scenes using Three.js and React Three Fiber
